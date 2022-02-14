@@ -3,7 +3,7 @@ from datetime import datetime
 
 def read():
     global prime_list, prime_dict
-    with open('prime_numbers_list_aux.txt', 'r') as f:
+    with open('prime_numbers_list.txt', 'r') as f:
         prime_list = [int(i) for i in f]
         prime_dict = {i: prime_list[i] for i in range(0,len(prime_list))}
 

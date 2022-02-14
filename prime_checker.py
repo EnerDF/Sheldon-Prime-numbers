@@ -16,7 +16,7 @@ def prime_checker(number: int) -> int:
             
 def writting_function(number: int):
     original_stdout = sys.stdout  
-    with open('prime_numbers_list_aux.txt', 'a') as f:
+    with open('prime_numbers_list.txt', 'a') as f:
             f.write(str(number))
             f.write('\n')
 
@@ -38,7 +38,7 @@ def execution_time(func):
     
 @execution_time
 def run():
-    run_numbers(100)
+    run_numbers(1000000)
 
 if __name__ == '__main__':
     run()
